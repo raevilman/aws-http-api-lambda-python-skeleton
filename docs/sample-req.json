@@ -1,43 +1,47 @@
 {
     "version": "2.0",
-    "routeKey": "ANY /counts",
-    "rawPath": "/counts",
-    "rawQueryString": "",
+    "routeKey": "ANY /Echo",
+    "rawPath": "/Echo",
+    "rawQueryString": "getValueFor=newClient",
+    "cookies": [
+        "Cookie_2=value",
+        "Cookie_3=value",
+        "Cookie_4=value"
+    ],
     "headers": {
-        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "accept": "*/*",
         "accept-encoding": "gzip, deflate, br",
-        "accept-language": "en-US,en;q=0.9,hi;q=0.8",
-        "cache-control": "max-age=0",
+        "cache-control": "no-cache",
+        "clientinformation": "public,private",
         "content-length": "0",
-        "host": "kzrxrwazk4.execute-api.us-east-1.amazonaws.com",
-        "sec-fetch-dest": "document",
-        "sec-fetch-mode": "navigate",
-        "sec-fetch-site": "none",
-        "sec-fetch-user": "?1",
-        "upgrade-insecure-requests": "1",
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36",
-        "x-amzn-trace-id": "Root=1-5f89c569-765eee884277977d1521190e",
-        "x-forwarded-for": "125.63.122.84",
+        "host": "0000000000.execute-api.us-east-1.amazonaws.com",
+        "user-agent": "TestClient",
+        "x-amzn-trace-id": "Root=1-5e6ab967-cfe253ce6f8b90986a678c40",
+        "x-forwarded-for": "1.1.1.1",
         "x-forwarded-port": "443",
         "x-forwarded-proto": "https"
     },
+    "queryStringParameters": {
+        "getValueFor": "newClient"
+    },
     "requestContext": {
-        "accountId": "1234567890",
-        "apiId": "kzrxrwazk4",
-        "domainName": "kzrxrwazk4.execute-api.us-east-1.amazonaws.com",
-        "domainPrefix": "kzrxrwazk4",
+        "accountId": "0000000000",
+        "apiId": "0000000000",
+        "domainName": "0000000000.execute-api.us-east-1.amazonaws.com",
+        "domainPrefix": "0000000000",
         "http": {
             "method": "GET",
-            "path": "/counts",
+            "path": "/Echo",
             "protocol": "HTTP/1.1",
-            "sourceIp": "125.63.122.84",
-            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+            "sourceIp": "1.1.1.1",
+            "userAgent": "TestClient"
         },
-        "requestId": "UgvIehdaIPMKV4A=",
-        "routeKey": "ANY /counts",
+        "requestId": "JTHoQgr2oAMEPMg=",
+        "routeId": "47matwk",
+        "routeKey": "ANY /Echo",
         "stage": "$default",
-        "time": "16/Oct/2020:16:08:09 +0000",
-        "timeEpoch": 1602864489395
+        "time": "12/Mar/2020:22:36:23 +0000",
+        "timeEpoch": 1584052583903
     },
-    "isBase64Encoded": false
+    "isBase64Encoded": true
 }
