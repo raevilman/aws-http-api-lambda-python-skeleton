@@ -11,6 +11,7 @@
     "headers": {
         "accept": "*/*",
         "accept-encoding": "gzip, deflate, br",
+        "authorization": "<token>",
         "cache-control": "no-cache",
         "clientinformation": "public,private",
         "content-length": "0",
@@ -27,6 +28,25 @@
     "requestContext": {
         "accountId": "0000000000",
         "apiId": "0000000000",
+        "authorizer": {
+            "jwt": {
+                "claims": {
+                    "aud": "aud-client-id",
+                    "auth_time": "1603117382",
+                    "email": "xxxx.xxxx@gmail.com",
+                    "email_verified": "true",
+                    "exp": "1603120982",
+                    "firebase": "map[identities:map[email:[xxxx.xxxx@gmail.com] google.com:[123456789]] sign_in_provider:google.com]",
+                    "iat": "1603117382",
+                    "iss": "https://securetoken.google.com/project-id",
+                    "name": "John Doe",
+                    "picture": "https://lh3.googleusercontent.com/a-/vUNKL4Y1nuA",
+                    "sub": "SL41gRDw1gM4to6f7HD40zushij2",
+                    "user_id": "SL41gRDw1gM4to6f7HD40zushij2"
+                },
+                "scopes": null
+            }
+        },
         "domainName": "0000000000.execute-api.us-east-1.amazonaws.com",
         "domainPrefix": "0000000000",
         "http": {
