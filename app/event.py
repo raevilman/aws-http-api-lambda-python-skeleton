@@ -13,3 +13,12 @@ class Event:
 
     def req_id(self):
         return self.req_context()['requestId']
+
+    def req_body(self):
+        if 'body' in self.event:
+            return self.event['body']
+        else:
+            return None
+
+    def is_base64encoded(self):
+        return self.event['isBase64Encoded']
