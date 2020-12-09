@@ -1,6 +1,6 @@
 import json
 
-from app.app import run
+from app.main import run
 from app.event import Event
 from app.responder import send_server_error
 from app.utils import get_logger
