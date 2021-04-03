@@ -1,7 +1,7 @@
 {
     "version": "2.0",
-    "routeKey": "ANY /Echo",
-    "rawPath": "/Echo",
+    "routeKey": "GET /echo",
+    "rawPath": "/echo",
     "rawQueryString": "getValueFor=newClient",
     "cookies": [
         "Cookie_2=value",
@@ -51,14 +51,14 @@
         "domainPrefix": "0000000000",
         "http": {
             "method": "GET",
-            "path": "/Echo",
+            "path": "/echo",
             "protocol": "HTTP/1.1",
             "sourceIp": "1.1.1.1",
             "userAgent": "TestClient"
         },
         "requestId": "JTHoQgr2oAMEPMg=",
         "routeId": "47matwk",
-        "routeKey": "ANY /Echo",
+        "routeKey": "GET /echo",
         "stage": "$default",
         "time": "12/Mar/2020:22:36:23 +0000",
         "timeEpoch": 1584052583903

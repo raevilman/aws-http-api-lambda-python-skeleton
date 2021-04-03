@@ -5,6 +5,9 @@ class Event:
     def req_context(self):
         return self.event['requestContext']
 
+    def route_key(self):
+        return self.event['routeKey']
+
     def http_path(self):
         return self.req_context()['http']['path']
 
